@@ -1,10 +1,10 @@
-# Porcine MutBERT: A Lightweight Genomic Foundation Model for Functional Element Prediction in Pigs
+# Porcine MutBERT: A family of Lightweight Genomic Foundation Models for Functional Element Prediction in Pigs
 
-The repo contains the official implementation of "Porcine MutBERT: A Lightweight Genomic Foundation Model for Functional Element Prediction in Pigs".
+The repo contains the official implementation of "Porcine MutBERT: A family of Lightweight Genomic Foundation Model for Functional Element Prediction in Pigs".
 
 ## Contents
 
-- [Porcine MutBERT: A Lightweight Genomic Foundation Model for Functional Element Prediction in Pigs](#porcine-mutbert-a-lightweight-genomic-foundation-model-for-functional-element-prediction-in-pigs)
+- [Porcine MutBERT: A family of Lightweight Genomic Foundation Models for Functional Element Prediction in Pigs](#porcine-mutbert-a-family-of-lightweight-genomic-foundation-models-for-functional-element-prediction-in-pigs)
   - [Contents](#contents)
   - [1. Introduction](#1-introduction)
   - [2. Model and Results](#2-model-and-results)
