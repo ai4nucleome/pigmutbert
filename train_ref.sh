@@ -1,0 +1,17 @@
+accelerate launch --main_process_port 61234 --gpu_ids 0,1,2,3 run_pretrain.py \
+    --data_dir=data/ref \
+    --tokenizer_name=configs \
+    --mlm_probability=0.15 \
+    --temperature=1.0 \
+    --per_device_train_batch_size=256 \
+    --per_device_eval_batch_size=256 \
+    --learning_rate=2e-4 \
+    --weight_decay=0.01 \
+    --max_train_steps=200000 \
+    --gradient_accumulation_steps=2 \
+    --num_warmup_steps=10000 \
+    --output_dir=out_pigref \
+    --seed=66 \
+    --max_seq_length=512 \
+    --checkpointing_steps=500 \
+    --exp_name=pigref

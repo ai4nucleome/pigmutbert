@@ -1,0 +1,17 @@
+accelerate launch --num_processes=4 --main_process_port 64567 --gpu_ids 0,1,2,3 run_pretrain.py \
+    --data_dir=data/mut40 \
+    --tokenizer_name=configs \
+    --mlm_probability=0.15 \
+    --temperature=0.7 \
+    --per_device_train_batch_size=256 \
+    --per_device_eval_batch_size=256 \
+    --learning_rate=2e-4 \
+    --weight_decay=0.01 \
+    --max_train_steps=200000 \
+    --gradient_accumulation_steps=2 \
+    --num_warmup_steps=10000 \
+    --output_dir=out_mut40 \
+    --seed=66 \
+    --max_seq_length=512 \
+    --checkpointing_steps=500 \
+    --exp_name=pigmut40
